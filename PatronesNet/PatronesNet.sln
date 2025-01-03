@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatronDecorator", "PatronDecorator\PatronDecorator.csproj", "{8303085A-5510-4EB9-9B3E-62E93FB8D3CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatronChainOfResponsability", "PatronChainOfResponsability\PatronChainOfResponsability.csproj", "{4471F4C8-DA02-4D8E-8F69-280E3095FF24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8303085A-5510-4EB9-9B3E-62E93FB8D3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8303085A-5510-4EB9-9B3E-62E93FB8D3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8303085A-5510-4EB9-9B3E-62E93FB8D3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4471F4C8-DA02-4D8E-8F69-280E3095FF24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4471F4C8-DA02-4D8E-8F69-280E3095FF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4471F4C8-DA02-4D8E-8F69-280E3095FF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4471F4C8-DA02-4D8E-8F69-280E3095FF24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
