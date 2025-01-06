@@ -1,12 +1,12 @@
 # 🚀 **Proyecto de Patrones de Diseño en .Net**
 
-¡Bienvenido al **proyecto de Patrones de Diseño**! 🎉 Este repositorio está dedicado a ayudar a la comunidad a aprender sobre patrones de diseño de manera simple y sencilla.
+¡Bienvenido al **proyecto de Patrones de Diseño**! 🎉 Este repositorio está dedicado a una charla que dare en Accenture sobre patrones de diseño y tambien para ayudar a la comunidad a aprender sobre patrones de diseño de manera simple y sencilla.
 
 ---
 
 ## 🎯 **Objetivo**
 
-El objetivo de este proyecto es proporcionar ejemplos **claros y concisos** de los patrones de diseño más comunes en el desarrollo de software. Queremos que **cualquier persona**, sin importar su nivel de experiencia, pueda entender y aplicar estos patrones en sus propios proyectos. 💡
+El objetivo de este proyecto es proporcionar ejemplos **claros y concisos** de los patrones de diseño más comunes en el desarrollo de software. Quiero que **cualquier persona**, sin importar su nivel de experiencia, pueda entender y aplicar estos patrones en sus propios proyectos. 💡
 
 ---
 
@@ -14,8 +14,8 @@ El objetivo de este proyecto es proporcionar ejemplos **claros y concisos** de l
 
 En este repositorio encontrarás:
 
-- 📝 **Explicaciones detalladas:** Descripciones de cada patrón de diseño, incluyendo su propósito y cuándo utilizarlo.
-- 💻 **Ejemplos de código:** Implementaciones prácticas en varios lenguajes de programación para que puedas ver cómo se aplican los patrones en la vida real.
+- 📝 **Explicaciones detalladas:** Descripciones de cada patrón de diseño en el video de la charla (link: TBD), incluyendo su propósito y cuándo utilizarlo.
+- 💻 **Ejemplos de código:** Implementaciones prácticas en C# de programación para que puedas ver cómo se aplican los patrones en la vida real.
 - 🌐 **Casos de uso:** Ejemplos de situaciones del mundo real donde se pueden aplicar estos patrones.
 
 ---
