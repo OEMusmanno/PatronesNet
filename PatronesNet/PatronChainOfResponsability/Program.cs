@@ -7,7 +7,7 @@ Console.WriteLine("Bienvenido a Bank");
 Console.WriteLine("----------------------------------------------");
 Console.WriteLine("\n");
 
-var cliente = new Cliente();
+Cliente cliente = new Cliente();
 Console.WriteLine("Ingrese su nombre: ");
 cliente.ClienteNombre = Console.ReadLine();
 Console.WriteLine("Ingrese su sueldo: ");
@@ -29,21 +29,5 @@ var director = new Director();
 empleado.SetProximoAutorizador(lider).SetProximoAutorizador(gerente).SetProximoAutorizador(director);
 empleado.AutorizarYAvanzar(remito, cliente);
 
-//resultado
-if (remito.AutorizadoPorDirector)
-{
-    Console.WriteLine($"Su prestamos resulto: aprobado");
 
-    Console.WriteLine("\n");
-    Console.WriteLine("Recuerde, Si deja de pagar, una agente lo visitara :)");
-    Console.ReadLine();
-}
-else
-{
-    Console.WriteLine($"Su prestamos resulto: desaprobado");
-
-    Console.WriteLine("\n");
-    Console.WriteLine("Gracias Vuelva prontos! :)");
-    Console.ReadLine();
-}
 

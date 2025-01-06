@@ -7,10 +7,11 @@ namespace PatronChainOfResponsability.Domain._02_Autorizadores
     {
         public override void AutorizarYAvanzar(Remito remito, Cliente cliente)
         {
-            Console.WriteLine("Revision por Lider, debe ser menor a 800 su sueldo");
-            remito.AutorizadoPorLider = cliente.ClienteSueldo < 800;
+
+            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("Revision por Lider, debe ser mayor a $1500 su sueldo");
+            remito.AutorizadoPorLider = cliente.ClienteSueldo > 1500;
             Console.WriteLine("Resultado = " + (remito.AutorizadoPorLider ? "aprobado" : "desaprobado"));
-            Console.WriteLine("\n");
 
             base.AutorizarYAvanzar(remito, cliente);
         }        
