@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatronState", "PatronState\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatronStrategy", "PatronStrategy\PatronStrategy.csproj", "{FF7EBC9C-8EEC-4717-AA7E-DED52E080070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatronComposite", "PatronComposite\PatronComposite.csproj", "{07F86F08-4085-4599-B122-EE8EFFF9184E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FF7EBC9C-8EEC-4717-AA7E-DED52E080070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF7EBC9C-8EEC-4717-AA7E-DED52E080070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF7EBC9C-8EEC-4717-AA7E-DED52E080070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F86F08-4085-4599-B122-EE8EFFF9184E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F86F08-4085-4599-B122-EE8EFFF9184E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F86F08-4085-4599-B122-EE8EFFF9184E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F86F08-4085-4599-B122-EE8EFFF9184E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
