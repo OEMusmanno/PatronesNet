@@ -9,9 +9,9 @@ namespace PatronStrategy.Extras
 
         public OperacionAbstract Operacion { get; set; }
 
-        public void realizarOperacion(int dias)
+        public void realizarOperacion()
         {
-            Operacion.CalculoTotalDeOperacion(this, dias);
+            Operacion.CalculoTotalDeOperacion(this);
         }
     }
 }

@@ -17,7 +17,7 @@
             Console.WriteLine($"Interes por 1 año de ON es de: ${total}");
         }
 
-        public override void CalculoTotalDeOperacion(Cliente cliente, int DiasOperacion)
+        public override void CalculoTotalDeOperacion(Cliente cliente)
         {
             Console.WriteLine($"Monto Invertido Total ${MontoInvertido}");
             CalculoDeCostoDeOperacion(cliente);

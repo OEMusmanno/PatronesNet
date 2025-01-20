@@ -4,9 +4,11 @@
     {
         public float MontoInvertido { get; set; }
 
-        public virtual void CalculoDeBeneficioPorDias(Cliente cliente, int DiasOperacion)
+        public virtual void CalculoDeBeneficioPorDias(Cliente cliente)
         {
-            var total = MontoInvertido * (DiasOperacion * 0.2f);
+            Console.WriteLine($"Que tal {cliente.ClienteNombre}, Cuantos dias quiere mantener la operacion?");
+            var dias = int.Parse(Console.ReadLine());
+            var total = MontoInvertido * (dias * 0.2f);
             cliente.SaldoCuenta += total;
             Console.WriteLine($"Beneficio Base es de: ${total}");
         }
@@ -25,11 +27,11 @@
             Console.WriteLine($"Interes Base es de: ${total}");
         }
 
-        public virtual void CalculoTotalDeOperacion(Cliente cliente, int DiasOperacion)
+        public virtual void CalculoTotalDeOperacion(Cliente cliente)
         {
             Console.WriteLine($"Monto Invertido Total ${MontoInvertido}");
             CalculoDeCostoDeOperacion(cliente);
-            CalculoDeBeneficioPorDias(cliente, DiasOperacion);
+            CalculoDeBeneficioPorDias(cliente);
             CalculoDeInteres(cliente);
             Console.WriteLine($"Su nuevo saldo: ${cliente.SaldoCuenta}");
         }

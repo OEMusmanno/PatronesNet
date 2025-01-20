@@ -2,10 +2,11 @@
 {
     internal class PlazoFijo : OperacionAbstract
     {
-        public virtual void CalculoDeBeneficioPorDias(Cliente cliente, int DiasOperacion)
+        public virtual void CalculoDeBeneficioPorDias(Cliente cliente)
         {
-            base.CalculoDeBeneficioPorDias(cliente, DiasOperacion);
-            var total = MontoInvertido * (DiasOperacion * 0.2f);
+            Console.WriteLine($"Que tal {cliente.ClienteNombre}, Cuantos dias quiere mantener la operacion?");
+            var dias = int.Parse(Console.ReadLine());
+            var total = MontoInvertido * (dias * 0.2f);
             cliente.SaldoCuenta += total;
             Console.WriteLine($"Beneficio extra es de: ${total}");
         }
@@ -24,6 +25,14 @@
             var total = MontoInvertido * 0.01f;
             cliente.SaldoCuenta += total;
             Console.WriteLine($"Interes extra es de: ${total}");
+        }
+        public override void CalculoTotalDeOperacion(Cliente cliente)
+        {
+            Console.WriteLine($"Monto Invertido Total ${MontoInvertido}");
+            CalculoDeCostoDeOperacion(cliente);
+            CalculoDeBeneficioPorDias(cliente);
+            CalculoDeInteres(cliente);
+            Console.WriteLine($"Su nuevo saldo: ${cliente.SaldoCuenta}");
         }
     }
 }

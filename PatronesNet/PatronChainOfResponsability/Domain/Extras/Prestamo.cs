@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PatronChainOfResponsability.Domain.Extras
+﻿namespace PatronChainOfResponsability.Domain.Extras
 {
-    public class Remito
+    public class Prestamo
     {
         public bool AutorizadoPorDirector { get; set; }
         public bool AutorizadoPorGerente { get; set; }

@@ -60,11 +60,9 @@ while (salir == false)
     }
 
     cliente.Operacion.MontoInvertido += monto;
-    Console.WriteLine($"Que tal {cliente.ClienteNombre}, Cuantos dias quiere mantener la operacion?");
-    var dias = int.Parse(Console.ReadLine());
 
     Console.WriteLine("\n");
-    cliente.realizarOperacion(dias);
+    cliente.realizarOperacion();
 
     Console.WriteLine("----------------------------------------------");
     Console.WriteLine("\n");

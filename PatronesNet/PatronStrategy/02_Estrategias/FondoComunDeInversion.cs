@@ -19,7 +19,7 @@
             Console.WriteLine($"Interes extra por elejir Fondo Comun De Inversion es de: ${total}");
         }
 
-        public override void CalculoTotalDeOperacion(Cliente cliente, int DiasOperacion)
+        public override void CalculoTotalDeOperacion(Cliente cliente)
         {
 
             Console.WriteLine($"Monto Invertido Total ${MontoInvertido}");

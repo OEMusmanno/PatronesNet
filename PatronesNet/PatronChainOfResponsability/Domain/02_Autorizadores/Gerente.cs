@@ -5,15 +5,15 @@ namespace PatronChainOfResponsability.Domain._02_Autorizadores
 {
     public class Gerente:AbstractAutorizador
     {
-        public override void AutorizarYAvanzar(Remito remito, Cliente cliente)
+        public override void AutorizarYAvanzar(Prestamo prestamo, Cliente cliente)
         {
 
             Console.WriteLine("----------------------------------------------");
             Console.WriteLine("Revision por Gerente, debe ser mayor a $2000 su sueldo");
-            remito.AutorizadoPorGerente = cliente.ClienteSueldo > 2000;
-            Console.WriteLine("Resultado = " + (remito.AutorizadoPorGerente ? "aprobado" : "desaprobado"));
+            prestamo.AutorizadoPorGerente = cliente.ClienteSueldo > 2000;
+            Console.WriteLine("Resultado = " + (prestamo.AutorizadoPorGerente ? "aprobado" : "desaprobado"));
 
-            base.AutorizarYAvanzar(remito, cliente);
+            base.AutorizarYAvanzar(prestamo, cliente);
         }
     }
 }

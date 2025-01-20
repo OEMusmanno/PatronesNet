@@ -5,15 +5,15 @@ namespace PatronChainOfResponsability.Domain._02_Autorizadores
 {
     public class Lider:AbstractAutorizador
     {
-        public override void AutorizarYAvanzar(Remito remito, Cliente cliente)
+        public override void AutorizarYAvanzar(Prestamo prestamo, Cliente cliente)
         {
 
             Console.WriteLine("----------------------------------------------");
             Console.WriteLine("Revision por Lider, debe ser mayor a $1500 su sueldo");
-            remito.AutorizadoPorLider = cliente.ClienteSueldo > 1500;
-            Console.WriteLine("Resultado = " + (remito.AutorizadoPorLider ? "aprobado" : "desaprobado"));
+            prestamo.AutorizadoPorLider = cliente.ClienteSueldo > 1500;
+            Console.WriteLine("Resultado = " + (prestamo.AutorizadoPorLider ? "aprobado" : "desaprobado"));
 
-            base.AutorizarYAvanzar(remito, cliente);
+            base.AutorizarYAvanzar(prestamo, cliente);
         }        
     }
 }

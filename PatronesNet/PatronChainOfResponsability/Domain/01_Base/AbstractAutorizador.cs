@@ -2,20 +2,20 @@
 
 namespace PatronChainOfResponsability.Domain._01_Base
 {
-    public abstract class AbstractAutorizador : IAutorizadorBase
+    public abstract class AbstractAutorizador 
     {
-        private IAutorizadorBase _proximoAutorizador;
+        private AbstractAutorizador _proximoAutorizador;
 
-        public IAutorizadorBase SetProximoAutorizador(IAutorizadorBase autorizador)
+        public AbstractAutorizador SetProximoAutorizador(AbstractAutorizador autorizador)
         {
             _proximoAutorizador = autorizador;
             return _proximoAutorizador;
         }
-        public virtual void AutorizarYAvanzar(Remito remito, Cliente cliente)
+        public virtual void AutorizarYAvanzar(Prestamo prestamo, Cliente cliente)
         {
             if (_proximoAutorizador != null)
             {
-                _proximoAutorizador.AutorizarYAvanzar(remito, cliente);
+                _proximoAutorizador.AutorizarYAvanzar(prestamo, cliente);
             }
         }
     }

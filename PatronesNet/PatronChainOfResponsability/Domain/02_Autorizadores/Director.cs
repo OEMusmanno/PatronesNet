@@ -6,13 +6,14 @@ namespace PatronChainOfResponsability.Domain._02_Autorizadores
     public class Director : AbstractAutorizador
     {      
 
-        public override void AutorizarYAvanzar(Remito remito, Cliente cliente)
+        public override void AutorizarYAvanzar(Prestamo prestamo, Cliente cliente)
         {
 
             Console.WriteLine("----------------------------------------------");
             Console.WriteLine("Revision por Director, si los anteriores aprobaron, yo apruebo");            
-            remito.AutorizadoPorDirector = remito.Aprobado;
-            if (remito.AutorizadoPorDirector)
+            prestamo.AutorizadoPorDirector = prestamo.Aprobado;
+
+            if (prestamo.AutorizadoPorDirector)
             {
                 Console.WriteLine("Su prestamos resulto: Aprobado :)");
                 Console.WriteLine("\n");
@@ -26,7 +27,7 @@ namespace PatronChainOfResponsability.Domain._02_Autorizadores
             Console.WriteLine("\n");
 
             Console.WriteLine("----------------------------------------------");
-            base.AutorizarYAvanzar(remito, cliente);
+            base.AutorizarYAvanzar(prestamo, cliente);
         }
     }
 }

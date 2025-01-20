@@ -11,7 +11,7 @@
         }
 
 
-        public override void CalculoTotalDeOperacion(Cliente cliente, int DiasOperacion)
+        public override void CalculoTotalDeOperacion(Cliente cliente)
         {
             Console.WriteLine($"Monto Invertido Total ${MontoInvertido}");
             CalculoDeCostoDeOperacion(cliente);

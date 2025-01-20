@@ -11,11 +11,10 @@
             Console.WriteLine($"Interes extra por elejir cuentaAhorro es de: ${total}");
         }
 
-        public override void CalculoTotalDeOperacion(Cliente cliente, int DiasOperacion)
+        public override void CalculoTotalDeOperacion(Cliente cliente)
         {
 
             Console.WriteLine($"Monto Invertido Total ${MontoInvertido}");
-            CalculoDeBeneficioPorDias(cliente, DiasOperacion);
             CalculoDeInteres(cliente);
             Console.WriteLine($"Su nuevo saldo: ${cliente.SaldoCuenta}");
         }

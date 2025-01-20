@@ -18,7 +18,7 @@ Console.WriteLine($"Hola: {cliente.ClienteNombre}, usted solicito un prestamo,us
 Console.WriteLine("\n");
 #endregion
 
-var remito = new Remito();
+var prestamo = new Prestamo();
 var empleado = new Empleado();
 var lider = new Lider();
 var gerente = new Gerente();
@@ -27,7 +27,7 @@ var director = new Director();
 
 //Seteamos la cadena
 empleado.SetProximoAutorizador(lider).SetProximoAutorizador(gerente).SetProximoAutorizador(director);
-empleado.AutorizarYAvanzar(remito, cliente);
+empleado.AutorizarYAvanzar(prestamo, cliente);
 
 
 
